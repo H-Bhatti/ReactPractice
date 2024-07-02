@@ -5,6 +5,7 @@
 }
 
 .heading {
+  font-family: "Roboto Mono", monospace;
   text-align: center;
   text-transform: capitalize;
   font-weight: bold;
@@ -13,6 +14,7 @@
 }
 
 .timeDiv {
+  font-family: "Roboto Mono", monospace;
   text-align: center;
   margin: 2%;
   font-size: large;

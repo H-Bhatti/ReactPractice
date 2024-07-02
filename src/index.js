@@ -8,11 +8,21 @@ const randomImage2 = "https://picsum.photos/300/300";
 const randomImage3 = "https://picsum.photos/300/400";
 const link = "https://github.com/H-Bhatti";
 
+const inLineCSS = {
+  textAlign: "center",
+  textTransform: "capitalize",
+  fontWeight: "bold",
+  texSshadow: "0px 2px 4px grey",
+  margin: "50px 50px",
+};
+
 const currentDate = new Date();
 console.log(currentDate.toLocaleString());
 ReactDOM.render(
   <>
-    <h1 className="heading">My name is {name} click on the third image</h1>
+    <h1 className="heading" style={inLineCSS}>
+      My name is {name} click on the third image
+    </h1>
     <div className="timeDiv">
       <p>Date is:: {currentDate.toLocaleDateString()}</p>
       <p>Time is : {currentDate.toLocaleTimeString()}</p>

@@ -2,38 +2,35 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-const name = "Hammad Bhatti";
-const randomImage1 = "https://picsum.photos/300/200";
-const randomImage2 = "https://picsum.photos/300/300";
-const randomImage3 = "https://picsum.photos/300/400";
-const link = "https://github.com/H-Bhatti";
+// const name = "Hammad Bhatti";
+// const randomImage1 = "https://picsum.photos/300/200";
+// const randomImage2 = "https://picsum.photos/300/300";
+// const randomImage3 = "https://picsum.photos/300/400";
+// const link = "https://github.com/H-Bhatti";
 
-const inLineCSS = {
-  textAlign: "center",
-  textTransform: "capitalize",
-  fontWeight: "bold",
-  texSshadow: "0px 2px 4px grey",
-  margin: "50px 50px",
+const currentDate = new Date().getHours();
+const inlineCSS = {
+  color: "Black",
 };
 
-const currentDate = new Date();
-console.log(currentDate.toLocaleString());
+function Greting(currentDate) {
+  if (currentDate >= 1 && currentDate <= 11) {
+    inlineCSS.color = "green";
+    return "Good Morning";
+  }
+  if (currentDate >= 12 && currentDate <= 19) {
+    inlineCSS.color = "Blue";
+    return "Good Evening";
+  }
+  inlineCSS.color = "red";
+  return "Good Night";
+}
+
 ReactDOM.render(
   <>
-    <h1 className="heading" style={inLineCSS}>
-      My name is {name} click on the third image
+    <h1 className="heading">
+      AYYYYYy yOOOOOOO, <span style={inlineCSS}>{Greting(currentDate)}</span>
     </h1>
-    <div className="timeDiv">
-      <p>Date is:: {currentDate.toLocaleDateString()}</p>
-      <p>Time is : {currentDate.toLocaleTimeString()}</p>
-    </div>
-    <div className="imgDiv">
-      <img src={randomImage1} alt="random Image" className="img" />
-      <img src={randomImage2} alt="random Image" className="img" />
-      <a href={link} target="_newTab">
-        <img src={randomImage3} alt="random Image" className="img" />
-      </a>
-    </div>
   </>,
   document.getElementById("root")
 );

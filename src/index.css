@@ -1,0 +1,33 @@
+body {
+    background-color: #5AAFC8;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+.heading {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a8d0e6;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #e6f7ff;
+    margin-left: 25%;
+}
+
+.timeDiv {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin: 2%;
+    font-size: large;
+    font-style: oblique;
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: center;
+}
